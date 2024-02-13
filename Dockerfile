@@ -1,4 +1,4 @@
-FROM mediawiki:1.35.13
+FROM mediawiki:1.39.6
 
 RUN apt-get update && \
   apt-get install -y asymptote msmtp && \
