@@ -1,7 +1,7 @@
-FROM mediawiki:1.39.6
+FROM mediawiki:1.35.13
 
 RUN apt-get update && \
-  apt-get install -y asymptote msmtp && \
+  apt-get install -y --no-install-recommends asymptote msmtp lmodern && \
   apt-get clean && \
   rm -rf /var/lib/apt/lists/*
 
